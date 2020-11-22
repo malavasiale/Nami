@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .site-footer
 {
   background-color:rgba(255, 255, 255, 0);
@@ -7,15 +11,17 @@
   color:#737373;
 }
 
-.site-footer row 
+.row 
 {
-  display: inline-block;
+      margin-left: 5%;
 }
 
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color:#FAFF05;
+  border-bottom-color: #FAFF05 ;
   opacity:0.5;
+  width: 94%;
 }
 .site-footer hr.small
 {
@@ -23,7 +29,7 @@
 }
 .site-footer h6
 {
-  color:#fff;
+  color:#FAFF05;
   font-size:1.5vmax;
   text-transform:uppercase;
   margin-top:2vmax;
@@ -37,7 +43,7 @@
   user-select:text;
 }
 .site-footer h5{
-  color:#fff;
+  color:#FAFF05;
   font-size:1vmax;
   text-transform:uppercase;
   letter-spacing: 0.4vmax;
@@ -55,7 +61,6 @@
 .social-icons
 {
   float: right;
-  height: 20vh;
 }
 
 
@@ -72,8 +77,8 @@
 }
 
 .social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
+  background-color:#f5f5f5;
+  color:#f5f5f5;
   display:inline-block;
   width:5vmin;
   height:5vmin;
@@ -99,7 +104,7 @@
 .social-icons a.facebook{
   background: url(fb.svg);
   background-size: contain;
-  background-color: rgb(97, 94, 94);
+  background-color:#FAFF05;
 }
 
 .social-icons a.facebook:hover
@@ -110,7 +115,7 @@
 .social-icons a.instagram{
   background: url(instagram.svg);
   background-size: contain;
-  background-color: rgb(97, 94, 94);
+  background-color: #FAFF05;
 }
 
 .social-icons a.instagram:hover
