@@ -1,3 +1,7 @@
+body {
+    background-color: #5A5B5D;
+}
+
 .home {
 	background-image: url('./sfondohome.jpg');
 	background-size: cover;
@@ -23,25 +27,65 @@
 .grid-container-icons {
 	display: grid;
 	grid-template-columns: 33.33% 33.33% 33.33%;
-	margin: 2% 0 2% 0;
-	width: 100%;
+	margin: 2% 15% 2% 15%;
+	width: 70%;
 }
-.esagono-top {
-	width: 0;
-	border-bottom: 90px solid #FAFF05;
-	border-left: 156px solid transparent;
-	border-right: 156px solid transparent;
-}
-
-.esagono-centro {
-	width: 312px;
-	height: 180px;
-	background-color: #FAFF05;
+.hex {
+    margin-top: 70px;
+    width: 208px;
+    height: 120px;
+    background: #FAFF05;
+    position: relative;
 }
 
-.esagono-bottom {
-	width: 0;
-	border-top: 90px solid #FAFF05;
-	border-left: 156px solid transparent;
-	border-right: 156px solid transparent;
-}
+    .hex:before, .hex:after {
+        content: "";
+        border-left: 104px solid transparent;
+        border-right: 104px solid transparent;
+        position: absolute;
+    }
+
+    .hex:before {
+        top: -59px;
+        border-bottom: 60px solid #FAFF05;
+    }
+
+    .hex:after {
+        bottom: -59px;
+        border-top: 60px solid #FAFF05;
+    }
+
+    .hex.inner {
+        background-color: #5A5B5D;
+        -webkit-transform: scale(.95, .95);
+        -moz-transform: scale(.95, .95);
+        transform: scale(.95, .95);
+        z-index: 1;
+    }
+
+        .hex.inner:before {
+            border-bottom: 60px solid #5A5B5D;
+        }
+
+        .hex.inner:after {
+            border-top: 60px solid #5A5B5D;
+        }
+
+    .hex.inner2 {
+        background-color: #FAFF05;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        -webkit-transform: scale(.9, .9);
+        -moz-transform: scale(.9, .9);
+        transform: scale(.9, .9);
+        z-index: 2;
+    }
+
+        .hex.inner2:before {
+            border-bottom: 60px solid #FAFF05;
+        }
+
+        .hex.inner2:after {
+            border-top: 60px solid #FAFF05;
+        }
