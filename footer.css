@@ -4,7 +4,7 @@
   padding-top: 15vh;
   font-family: "Lato", sans-serif;
   font-size: 2vh;
-  color:#737373;
+  color:white;
 }
 
 .riga
@@ -46,7 +46,7 @@
 }
 .site-footer a
 {
-  color:#737373;
+  color:white;
 }
 .site-footer a:hover
 {

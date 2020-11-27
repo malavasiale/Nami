@@ -1,5 +1,10 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: #5A5B5D;
+    transition: 0.5s;
 }
 
 .home {
@@ -29,6 +34,11 @@ body {
 	grid-template-columns: 33.33% 33.33% 33.33%;
 	margin: 2% 15% 2% 15%;
 	width: 70%;
+}
+.grid-container-form {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 100%;
 }
 .hex {
     margin-top: 70px;
