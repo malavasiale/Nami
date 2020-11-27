@@ -14,24 +14,40 @@ body {
 	margin: 0;
 	height: 100%;
 }
-.container{
+.inner-container-icons{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 16%;
     padding-top: 2%;
 }
-.container h2 {
+.inner-container-icons h2 {
 	text-align: center;
 }
-.container h1 {
+.inner-container-icons h1 {
 	font-size: 500%;
 	color: #FAFF05 !important;
 	text-align: center;
 	margin-top: 25%;
 }
+.inner-icon-comment{
+    margin-top: 25%;
+    margin-bottom: 5%;
+    text-align: center;
+    color: white;
+}
+.outer-container-icons {
+    width: fit-content;
+    border: 3px solid #FAFF05;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    position: relative;
+    box-shadow: 4px 6px;
+}
 .grid-container-icons {
 	display: grid;
-	grid-template-columns: 33.33% 33.33% 33.33%;
+	grid-template-columns: 1fr 1fr 1fr;
 	margin: 2% 15% 2% 15%;
 	width: 70%;
 }
