@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap');
+
 html {
     scroll-behavior: smooth;
   }
@@ -5,14 +7,33 @@ html {
 body {
     background-color: #5A5B5D;
     transition: 0.5s;
+    font-family: 'Big Shoulders Stencil Display', cursive;
 }
 
+.grid {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2%;
+    margin-right: 72%;
+    transform: scale(0.8, 0.8);
+}
+
+
 .home {
-	background-image: url('./sfondohome.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin: 0;
-	height: 100%;
+    background-image: url('./media/2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100%;
 }
 .container{
     display: flex;
@@ -20,113 +41,141 @@ body {
     justify-content: center;
     padding-top: 2%;
 }
-.container h2 {
-	text-align: center;
-}
-.container h1 {
-	font-size: 500%;
-	color: #FAFF05 !important;
-	text-align: center;
-	margin-top: 25%;
-}
-.inner-container-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 16%;
-    padding-top: 2%;
-}
-.inner-container-icons h2 {
-	text-align: center;
-}
-.inner-container-icons h1 {
-	font-size: 500%;
-	color: #FAFF05 !important;
-	text-align: center;
-	margin-top: 25%;
-}
-.inner-icon-comment{
-    margin-top: 25%;
-    margin-bottom: 5%;
-    text-align: center;
-    color: white;
-}
-.outer-container-icons {
-    width: fit-content;
-    border: 3px solid #FAFF05;
-    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-    text-transform: uppercase;
-    letter-spacing: 0.3ch;
-    position: relative;
-    box-shadow: 4px 6px;
-}
-.grid-container-icons {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: 2% 15% 2% 15%;
-	width: 70%;
-}
-.grid-container-form {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	width: 100%;
-}
-.hex {
-    margin-top: 70px;
-    width: 208px;
-    height: 120px;
-    background: #FAFF05;
-    position: relative;
+.card-inner {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    top: 2px;
+    padding: 2%;
 }
 
-    .hex:before, .hex:after {
-        content: "";
-        border-left: 104px solid transparent;
-        border-right: 104px solid transparent;
-        position: absolute;
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .card-inner {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
     }
 
-    .hex:before {
-        top: -59px;
-        border-bottom: 60px solid #FAFF05;
-    }
-
-    .hex:after {
-        bottom: -59px;
-        border-top: 60px solid #FAFF05;
-    }
-
-    .hex.inner {
-        background-color: #5A5B5D;
-        -webkit-transform: scale(.95, .95);
-        -moz-transform: scale(.95, .95);
-        transform: scale(.95, .95);
-        z-index: 1;
-    }
-
-        .hex.inner:before {
-            border-bottom: 60px solid #5A5B5D;
-        }
-
-        .hex.inner:after {
-            border-top: 60px solid #5A5B5D;
-        }
-
-    .hex.inner2 {
-        background-color: #FAFF05;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        -webkit-transform: scale(.9, .9);
-        -moz-transform: scale(.9, .9);
-        transform: scale(.9, .9);
+    .container h2 {
+        text-align: center;
+        color: #fafccf;
         z-index: 2;
     }
 
-        .hex.inner2:before {
+    .container h1 {
+        font-size: 500%;
+        color: #FAFF05 !important;
+        text-align: center;
+        margin-top: 25%;
+    }
+
+    .inner-container-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 16%;
+        padding-top: 2%;
+    }
+
+        .inner-container-icons h2 {
+            text-align: center;
+        }
+
+        .inner-container-icons h1 {
+            font-size: 500%;
+            color: #FAFF05 !important;
+            text-align: center;
+            margin-top: 25%;
+        }
+
+    .inner-icon-comment {
+        margin-top: 25%;
+        margin-bottom: 5%;
+        text-align: center;
+        color: white;
+    }
+
+    .outer-container-icons {
+        width: fit-content;
+        border: 1px solid #FAFF05;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.3ch;
+        position: relative;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
+
+    .grid-container-icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2% 15% 2% 15%;
+        width: 70%;
+    }
+
+    .grid-container-form {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+
+    .hex {
+        margin-top: 70px;
+        width: 208px;
+        height: 120px;
+        background: #FAFF05;
+        position: relative;
+    }
+
+        .hex:before, .hex:after {
+            content: "";
+            border-left: 104px solid transparent;
+            border-right: 104px solid transparent;
+            position: absolute;
+        }
+
+        .hex:before {
+            top: -59px;
             border-bottom: 60px solid #FAFF05;
         }
 
-        .hex.inner2:after {
+        .hex:after {
+            bottom: -59px;
             border-top: 60px solid #FAFF05;
         }
+
+        .hex.inner {
+            background-color: #5A5B5D;
+            -webkit-transform: scale(.95, .95);
+            -moz-transform: scale(.95, .95);
+            transform: scale(.95, .95);
+            z-index: 1;
+        }
+
+            .hex.inner:before {
+                border-bottom: 60px solid #5A5B5D;
+            }
+
+            .hex.inner:after {
+                border-top: 60px solid #5A5B5D;
+            }
+
+        .hex.inner2 {
+            background-color: #FAFF05;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            -webkit-transform: scale(.9, .9);
+            -moz-transform: scale(.9, .9);
+            transform: scale(.9, .9);
+            z-index: 2;
+        }
+
+            .hex.inner2:before {
+                border-bottom: 60px solid #FAFF05;
+            }
+
+            .hex.inner2:after {
+                border-top: 60px solid #FAFF05;
+            }
