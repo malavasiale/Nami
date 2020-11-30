@@ -8,6 +8,7 @@ body {
     background-color: #5A5B5D;
     transition: 0.5s;
     font-family: 'Big Shoulders Stencil Display', cursive;
+    cursor: url('./cursor.png'), auto;
 }
 
 .grid {
