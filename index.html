@@ -13,30 +13,44 @@
 
 </head>
 <body style="margin: 0;">
-    <div class="home">
-        <div class="grid">
+
+    <script>
+        var i = 0;
+
+        function changeBackground() {
+            document.getElementById("home_image").style.backgroundImage = "url('./media/5.jpg')"
+        }
+
+        window.setInterval(changeBackground,8000);
+    </script>
+
+    <div id = "home_image" class="home">
+        <div style = "background-color: rgba(0, 0, 0, 0.5); height: 100vh;">
             <div class="menu">
-                <div class="hexagon-item">
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="hex-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
-                        <span class="hex-content-inner">
-                            <span class="icon">
-                                <i class="fa fa-universal-access"></i>
+                <div style= "transform: scale(0.8,0.8);">
+                    <div class="hexagon-item">
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="hex-item">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
+                            <span class="hex-content-inner">
+                                <span class="icon">
+                                    <i class="fa fa-universal-access"></i>
+                                </span>
+                                <span class="title">Home</span>
                             </span>
-                            <span class="title">Home</span>
-                        </span>
-                        <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                    </a>
+                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+                        </a>
+                    </div>
                 </div>
+                
                 <div class="hexagon-item">
                     <div class="hex-item">
                         <div></div>
@@ -87,6 +101,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 
     <div class="grid-container-icons">
