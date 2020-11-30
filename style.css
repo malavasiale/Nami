@@ -30,7 +30,7 @@ body {
 
 
 .home {
-    background-image: url('./media/2.jpg');
+    background-image: url('./media/0.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -61,7 +61,7 @@ body {
     .container h2 {
         text-align: center;
         color: #fafccf;
-        z-index: 2;
+        font-size: 300%;
     }
 
     .container h1 {

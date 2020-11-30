@@ -897,7 +897,8 @@
 }
 
 .fa-calendar-alt:before {
-    content: "\f073"
+    content: "\f073";
+    color: #FAFF05;
 }
 
 .fa-calendar-check:before {
@@ -1365,7 +1366,8 @@
 }
 
 .fa-comments:before {
-    content: "\f086"
+    content: "\f086";
+    color: #FAFF05;
 }
 
 .fa-comments-dollar:before {
@@ -2481,7 +2483,8 @@
 }
 
 .fa-gratipay:before {
-    content: "\f184"
+    content: "\f184";
+    color: #FAFF05;
 }
 
 .fa-grav:before {

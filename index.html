@@ -15,10 +15,14 @@
 <body style="margin: 0;">
 
     <script>
-        var i = 0;
-
+        var i = 1;
         function changeBackground() {
-            document.getElementById("home_image").style.backgroundImage = "url('./media/5.jpg')"
+            var file = 'url(./media/' + i + '.jpg)';
+            document.getElementById("home_image").style.backgroundImage = file;
+            i++;
+            if (i == 4) {
+                i = 0;
+            }
         }
 
         window.setInterval(changeBackground,8000);
@@ -41,9 +45,9 @@
                     <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
                         <span class="hex-content-inner">
                             <span class="icon">
-                                <i class="fa fa-universal-access"></i>
+                                <i class="fa fa-gratipay"></i>
                             </span>
-                            <span class="title">Home</span>
+                            <span class="title">Chi siamo</span>
                         </span>
                         <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
                     </a>
@@ -63,7 +67,7 @@
                     <a href="#form" class="hex-content">
                         <span class="hex-content-inner">
                             <span class="icon">
-                                <i class="fa fa-universal-access"></i>
+                                <i class="fa fa-comments"></i>
                             </span>
                             <span class="title">Contattaci</span>
                         </span>
@@ -84,9 +88,9 @@
                     <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
                         <span class="hex-content-inner">
                             <span class="icon">
-                                <i class="fa fa-universal-access"></i>
+                                <i class="fa fa-calendar-alt"></i>
                             </span>
-                            <span class="title">Home</span>
+                            <span class="title">Prenota Prova</span>
                         </span>
                         <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
                     </a>
