@@ -5,17 +5,18 @@ html {
   }
 
 body {
-    background-color: #5A5B5D;
+    background-color: rgb(52, 58, 64);
     transition: 0.5s;
     font-family: 'Big Shoulders Stencil Display', cursive;
     cursor: url('./cursor1.png'), auto;
 }
 
-.grid {
-    display: grid;
-    height: fit-content;
-    grid-template-rows: 10% 90%;
-    background-color: rgba(0, 0, 0, 0.5);
+.form{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 90%;
+    height: 50em;
 }
 
 .menu {
@@ -37,6 +38,7 @@ body {
     height: 100%;
     transition: 1s;
 }
+
 .container{
     display: flex;
     align-items: center;
@@ -112,8 +114,9 @@ body {
     .grid-container-icons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 2% 15% 2% 15%;
+        margin: 0 15% 2% 15%;
         width: 70%;
+        padding-top: 5%;
     }
 
     .grid-container-form {
@@ -148,7 +151,7 @@ body {
         }
 
         .hex.inner {
-            background-color: #5A5B5D;
+            background-color: rgb(52, 58, 64);
             -webkit-transform: scale(.95, .95);
             -moz-transform: scale(.95, .95);
             transform: scale(.95, .95);
@@ -156,11 +159,11 @@ body {
         }
 
             .hex.inner:before {
-                border-bottom: 60px solid #5A5B5D;
+                border-bottom: 60px solid rgb(52, 58, 64);
             }
 
             .hex.inner:after {
-                border-top: 60px solid #5A5B5D;
+                border-top: 60px solid rgb(52, 58, 64);
             }
 
         .hex.inner2 {
