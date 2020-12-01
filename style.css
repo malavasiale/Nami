@@ -45,7 +45,9 @@ body {
     justify-content: center;
     padding-top: 2%;
 }
-
+.text-container{
+    margin-top: 5%;
+}
 .text-container h1{
     text-align: center;
     color: #FAFF05;
@@ -116,14 +118,9 @@ body {
 
     .outer-container-icons {
         width: fit-content;
-        border: 1px solid #FAFF05;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
         text-transform: uppercase;
         letter-spacing: 0.3ch;
         position: relative;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     }
 
     .grid-container-icons {
@@ -132,6 +129,36 @@ body {
         margin: 0 15% 2% 15%;
         width: 70%;
         padding-top: 5%;
+    }
+
+    .text-container2 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: x-large;
+        line-height: 150%;
+        padding: 2%;
+    }
+
+    .grid-container-icons2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 80%;
+        margin: 3% 10% 0 10%;
+        border: 1px solid #FAFF05;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
+    .grid-container-icons3 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        width: 80%;
+        margin: 3% 10% 0 10%;
+        border: 1px solid #FAFF05;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     }
 
     .grid-container-form {
