@@ -45,6 +45,21 @@ body {
     justify-content: center;
     padding-top: 2%;
 }
+
+.text-container h1{
+    text-align: center;
+    color: #FAFF05;
+}
+.text-container h3 {
+    text-align: center;
+    color: white;
+}
+.my-hr{
+    width: 70%;
+    background-color: #FAFF05;
+    border-color:  #FAFF05;
+    height: 3px;
+}
 .card-inner {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     -webkit-border-radius: 20px;
@@ -121,8 +136,9 @@ body {
 
     .grid-container-form {
         display: grid;
-        grid-template-columns: 50% 50%;
-        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 10% 0 10%;
+        width: 80%;
     }
 
     .hex {
