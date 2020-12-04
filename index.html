@@ -16,53 +16,20 @@
 <body style="margin: 0;">
 
     <script>
-        new cookieNoticeJS({
+
+        var x = document.cookie;
+        if(x){
+            document.getElementById("cookie_accepted").style.height = "0";            
+        }
+
+        function acceptCookie(){
+            document.cookie = "accepted = yes";
+            document.getElementById("cookie_accepted").style.height = "0";            
+        }
         
-           // Localizations of the notice message
-           'messageLocales': {
-             'it': 'Per offrirti una migliore esperienza su questo sito, Namì Sport utilizza cookie tecnici e di profilazione. Il sito consente anche l’invio di cookie di terze parti, sia tecnici, analitici che di profilazione. Continuando nella navigazione acconsenti all’uso dei cookie.\r\n Se vuoi saperne di più '
-           },
-          
-           // Localizations of the dismiss button text
-           'buttonLocales': {
-             'it': 'Accetta'
-           },
-           
-           // Position for the cookie-notifier (default=bottom)
-           'cookieNoticePosition':'bottom',
-           
-           // Shows the "learn more button (default=false)
-           'learnMoreLinkEnabled':true,
-           
-           // The href of the learn more link must be applied if (learnMoreLinkEnabled=true) 
-           'learnMoreLinkHref':'',
-           
-           // Text for optional learn more button
-           'learnMoreLinkText':{
-               'en':'learn more',
-               'it':'clicca qui'
-           },
-           
-           // The message will be shown again in X days
-           'expiresIn': 30, 
-           
-           // Dismiss button background color
-           'buttonBgColor': '#FAFF05',  
-           
-           // Dismiss button text color
-           'buttonTextColor': '#fff', 
-             
-           // Notice background color
-           'noticeBgColor': '#000', 
-              
-           // Notice text color
-           'noticeTextColor': '#fff', 
-           
-           // the lernMoreLink color (default='#009fdd') 
-           'linkColor':'#FAFF05'
-              
-        });
     </script>
+
+    <div id="cookie_accepted" class = "cookie" onclick="acceptCookie()">CIAOOOOO</div>
 
     <script>
         var i = 1;
