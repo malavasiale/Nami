@@ -11,19 +11,18 @@
 <body id="main">
     <script>
 
-        var x = document.cookie;
-        if(x){
-            document.getElementById("cookie_accepted").style.height = "0";            
+        function checkCookie() {
+            var username = getCookie("accepted");
+            if (username != "") {
+                alert("Welcome again " + username);
+            }
         }
 
-        function acceptCookie(){
-            document.cookie = "accepted=yes";
-            document.getElementById("cookie_accepted").style.height = "0";            
-        }
         
     </script>
 
     <div id="cookie_accepted" class = "cookie" onclick="acceptCookie()">CIAOOOOO</div>
+    <div onclick="checkCookie()">CHECCKAAAAAA</div>
     <!-- Site footer -->
     <footer class="site-footer" id="foot">
         <div class="row">
