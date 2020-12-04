@@ -11,12 +11,6 @@ body {
     cursor: url('./cursor1.png'), auto;
 }
 
-.privacy{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-}
 
 .form{
     -webkit-border-radius: 20px;
