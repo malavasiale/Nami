@@ -16,6 +16,55 @@
 <body style="margin: 0;">
 
     <script>
+        new cookieNoticeJS({
+        
+           // Localizations of the notice message
+           'messageLocales': {
+             'it': 'Prova'
+           },
+          
+           // Localizations of the dismiss button text
+           'buttonLocales': {
+             'it': 'Chiudi'
+           },
+           
+           // Position for the cookie-notifier (default=bottom)
+           'cookieNoticePosition':'bottom',
+           
+           // Shows the "learn more button (default=false)
+           'learnMoreLinkEnabled':true,
+           
+           // The href of the learn more link must be applied if (learnMoreLinkEnabled=true) 
+           'learnMoreLinkHref':'',
+           
+           // Text for optional learn more button
+           'learnMoreLinkText':{
+               'en':'learn more',
+               'it':'più info'
+           },
+           
+           // The message will be shown again in X days
+           'expiresIn': 30, 
+           
+           // Dismiss button background color
+           'buttonBgColor': '#d35400',  
+           
+           // Dismiss button text color
+           'buttonTextColor': '#fff', 
+             
+           // Notice background color
+           'noticeBgColor': '#000', 
+              
+           // Notice text color
+           'noticeTextColor': '#fff', 
+           
+           // the lernMoreLink color (default='#009fdd') 
+           'linkColor':'#f00'
+              
+        });
+    </script>
+
+    <script>
         var i = 1;
         function changeBackground() {
             var file = 'url(./media/' + i + '.jpg)';
