@@ -16,20 +16,39 @@
 
     <script>
 
-        var x = document.cookie;
-        if(x){
-            document.getElementById("cookie_accepted").style.height = "0";            
+        function checkCookie() {
+            var username = getCookie("accepted");
+            if (username != "") {
+                alert("Welcome again " + username);
+            }
         }
 
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+
         function acceptCookie(){
-            document.cookie = "accepted = yes";
+            document.cookie = "accepted=yes;path=/";
             document.getElementById("cookie_accepted").style.height = "0";            
         }
         
     </script>
 
     <div id="cookie_accepted" class = "cookie" onclick="acceptCookie()">CIAOOOOO</div>
-
+    <div onclick="checkCookie()">CHECCKAAAAAA</div>
     <script>
         var i = 1;
         function changeBackground() {
@@ -57,7 +76,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
+                    <a href="./footer.html" target="_blank" class="hex-content">
                         <span class="hex-content-inner">
                             <span class="icon">
                                 <i class="fa fa-gratipay"></i>
