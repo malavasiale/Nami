@@ -14,48 +14,13 @@
 </head>
 <body style="margin: 0;">
 
-    <script>
 
-        function checkCookie() {
-            var username = getCookie('accepted');
-            if (username != null) {
-                alert(username);
-            }
-        }
-
-        function setCookie(name,value,days) {
-            var expires = "";
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days*24*60*60*1000));
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + (value || "")  + expires + "; path=/";
-            document.getElementById("cookie_accepted").style.display = "none";
-            document.getElementById("cookie_accepted").style.opacity = "0";
-        }
-
-        function getCookie(name) {
-            var nameEQ = name + "=";
-            var ca = document.cookie.split(';');
-            for(var i=0;i < ca.length;i++) {
-                var c = ca[i];
-                while (c.charAt(0)==' ') c = c.substring(1,c.length);
-                    if (c.indexOf(nameEQ) == 0) return 
-                    c.substring(nameEQ.length,c.length);
-                }
-            return null;
-        }
-
-        window.onload = checkCookie();
-        
-    </script>
-
-    <div id="cookie_accepted" class = "cookie">
+    <div id="cookie_accepted" class="cookie">
         <div class="closeNav" onclick="setCookie('accepted','yes',0)">X</div>
-        <p>Per offrirti una migliore esperienza su questo sito, Namì Sport utilizza cookie tecnici e di profilazione. Il sito consente anche l’invio di cookie di terze parti, sia tecnici, analitici che di profilazione
+        <p>
+            Per offrirti una migliore esperienza su questo sito, Namì Sport utilizza cookie tecnici e di profilazione. Il sito consente anche l’invio di cookie di terze parti, sia tecnici, analitici che di profilazione
             Se vuoi saperne di più o negare il consenso all’uso dei cookie <a href="./cookie.html">clicca qui</a>. Continuando nella navigazione acconsenti all’uso dei cookie.<br><br>
-            
+
             Namì Sport tratta i dati nel rispetto del Regolamento Europeo 679/2016 (GDPR) ed è possibile prenderne visione nella <a href="./privacy.html">sezione Privacy</a> di questo sito web
         </p>
     </div>
@@ -151,18 +116,20 @@
 
     </div>
 
-    
-    <div class = "text-container">
+
+    <div class="text-container">
         <hr class="my-hr">
         <h1>Cos’è il metodo EMS di Nami? e perché scegliere NOI?</h1>
-        <h3>L'Elettro Stimolazione Muscolare (EMS) è una tecnica fisioterapica che amplifica degli impulsi elettrici
+        <h3>
+            L'Elettro Stimolazione Muscolare (EMS) è una tecnica fisioterapica che amplifica degli impulsi elettrici
             naturali del corpo attraverso onde elettriche. Lo stimolo supplementare indotto dalla tuta con incorporata
             la tecnologia di trasmissione EMS sollecita la muscolatura ad una maggiore contrazione intensificando
-            l’allenamento e concentrandolo in soli 20 minuti.</h3>
+            l’allenamento e concentrandolo in soli 20 minuti.
+        </h3>
         <hr class="my-hr">
     </div>
 
-    <div class = "grid-container-icons2">
+    <div class="grid-container-icons2">
         <div style="display: flex;align-items: center;justify-content: center;">
             <div class="outer-container-icons">
                 <div class="inner-container-icons">
@@ -179,15 +146,17 @@
                 </div>
             </div>
         </div>
-        <div class="text-container2">La tecnica EMS è un metodo di allenamento sicuro ed efficiente: generalmente in palestra, per raggiungere
+        <div class="text-container2">
+            La tecnica EMS è un metodo di allenamento sicuro ed efficiente: generalmente in palestra, per raggiungere
             risultati ipertrofici è importante dedicare molto tempo all’allenamento aumentando il carico nei
             movimenti; la tecnologia insieme alla tuta EMS permettere di raggiungere risultati simili con carichi inferiori
             sollecitando più del 90% della muscolatura, proteggendo le articolazioni.
             Inoltre, nell’attività fisica in sala pesi sei obbligato ad allenare un muscolo alla volta? Grazie all’allenamento
             congiunto alla EMS oltre 300 fasce muscolari sono attivate in soli 20 minuti riuscendo a concentrare un
-            lavoro muscolare pari a 4 ore di allenamento classico.</div>
+            lavoro muscolare pari a 4 ore di allenamento classico.
+        </div>
     </div>
-    <div class = "grid-container-icons3">
+    <div class="grid-container-icons3">
         <div class="text-container2">
             L’allenamento unito alla tecnica EMS viene svolta sempre in modalità assistita: per ogni seduta soli di 20’
             con EMS sarai dotato della tuta EMS NAMI e sarai affiancato dal personale specializzato: i nostri allenatori
@@ -213,7 +182,7 @@
             </div>
         </div>
     </div>
-    <div class = "grid-container-icons2">
+    <div class="grid-container-icons2">
         <div style="display: flex;align-items: center;justify-content: center;">
             <div class="outer-container-icons">
                 <div class="inner-container-icons">
@@ -254,7 +223,7 @@
         </div>
         <div id="form_contatti" style=" color: yellow; margin-top: 10%;align-items: center; justify-content: center; display: flex;">
             <div id="ff-compose"></div>
-            <script  async defer src="https://formfacade.com/include/117635259732486860070/form/1FAIpQLScF_eqwi2rKGa_wUUB-jQAFf33kaov1SiqBC0XdCHDTZCHNaA/classic.js?div=ff-compose"></script>
+            <script async defer src="https://formfacade.com/include/117635259732486860070/form/1FAIpQLScF_eqwi2rKGa_wUUB-jQAFf33kaov1SiqBC0XdCHDTZCHNaA/classic.js?div=ff-compose"></script>
         </div>
     </div>
 
@@ -281,6 +250,42 @@
             </ul>
         </div>
     </footer>
+    <script>
+
+        function checkCookie() {
+            var username = getCookie('accepted');
+            if (username != null) {
+                alert(username);
+            }
+        }
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            document.getElementById("cookie_accepted").style.display = "none";
+            document.getElementById("cookie_accepted").style.opacity = "0";
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return
+                c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        window.onload = checkCookie();
+
+    </script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
 </body>
