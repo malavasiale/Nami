@@ -15,7 +15,7 @@
 <body style="margin: 0;">
 
 
-    <div id="cookie_box" class="cookie">
+    <div id="cookie_accepted" class="cookie">
         <div class="closeNav" onclick="setCookie('accepted','yes',0)">X</div>
         <p>
             Per offrirti una migliore esperienza su questo sito, Namì Sport utilizza cookie tecnici e di profilazione. Il sito consente anche l’invio di cookie di terze parti, sia tecnici, analitici che di profilazione
@@ -252,41 +252,39 @@
     </footer>
 
     <script>
-        $(document).ready(function () {
-            /******************
-            COOKIE NOTICE
-            ******************/
-            if (getCookie('show_cookie_message') != 'no') {
-                $('#cookie_box').show();
+        function checkCookie() {
+            var username = getCookie('accepted');
+            if (username != "") {
+                alert(username);
             }
-
-            $('.cookie_box_close').click(function () {
-                $('#cookie_box').animate({ opacity: 0 }, "slow");
-                setCookie('show_cookie_message', 'no');
-                return false;
-            });
-        });
-
-        function setCookie(cookie_name, value) {
-            var exdate = new Date();
-            exdate.setDate(exdate.getDate() + (365 * 25));
-            document.cookie = cookie_name + "=" + escape(value) + "; expires=" + exdate.toUTCString() + "; path=/";
         }
 
-        function getCookie(cookie_name) {
-            if (document.cookie.length > 0) {
-                cookie_start = document.cookie.indexOf(cookie_name + "=");
-                if (cookie_start != -1) {
-                    cookie_start = cookie_start + cookie_name.length + 1;
-                    cookie_end = document.cookie.indexOf(";", cookie_start);
-                    if (cookie_end == -1) {
-                        cookie_end = document.cookie.length;
-                    }
-                    return unescape(document.cookie.substring(cookie_start, cookie_end));
-                }
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
             }
-            return "";
-        }    
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            document.getElementById("cookie_accepted").style.display = "none";
+            document.getElementById("cookie_accepted").style.opacity = "0";
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return
+                c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        window.onload = checkCookie();
+
     </script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
