@@ -19,9 +19,10 @@
         function checkCookie() {
             var username = getCookie('accepted');
             if (username != "") {
-                alert("Welcome again " + username);
-                document.getElementById("cookie_accepted").style.height = "0";
-
+                document.getElementById("cookie_accepted").style.display = "none";
+                document.getElementById("cookie_accepted").style.opacity = "0";
+            }else{
+                alert("non ce ne cookiddi");
             }
         }
 
@@ -48,15 +49,17 @@
                 }
             return null;
         }
+
+        window.onload = checkCookie();
         
     </script>
 
     <div id="cookie_accepted" class = "cookie">
         <div class="closeNav" onclick="setCookie('accepted','yes',0)">X</div>
         <p>Per offrirti una migliore esperienza su questo sito, Namì Sport utilizza cookie tecnici e di profilazione. Il sito consente anche l’invio di cookie di terze parti, sia tecnici, analitici che di profilazione
-            Se vuoi saperne di più o negare il consenso all’uso dei cookie <a href="">clicca qui</a>. Continuando nella navigazione acconsenti all’uso dei cookie.<br><br>
+            Se vuoi saperne di più o negare il consenso all’uso dei cookie <a href="./cookie.html">clicca qui</a>. Continuando nella navigazione acconsenti all’uso dei cookie.<br><br>
             
-            Namì Sport tratta i dati nel rispetto del Regolamento Europeo 679/2016 (GDPR) ed è possibile prenderne visione nella <a href="">sezione Privacy</a> di questo sito web
+            Namì Sport tratta i dati nel rispetto del Regolamento Europeo 679/2016 (GDPR) ed è possibile prenderne visione nella <a href="./privacy.html">sezione Privacy</a> di questo sito web
         </p>
     </div>
     <script>
