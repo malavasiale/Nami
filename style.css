@@ -5,7 +5,9 @@ html {
   }
 
 body {
-    background-color: rgb(52, 58, 64);
+    background-image: url("./media/sfondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     transition: 0.5s;
     font-family: 'Big Shoulders Stencil Display', cursive;
     cursor: url('./cursor1.png'), auto;
