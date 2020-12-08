@@ -1,3 +1,11 @@
+.body-class-cookie{
+    background-color:  rgb(52, 58, 64);
+    transition: 0.5s;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    cursor: url('./cursor1.png'), auto;
+    margin: 0;
+}
+
 h1{
     color: #FAFF05;
     text-align: center;
