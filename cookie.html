@@ -6,9 +6,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="stylesheet" href="cookie.css" media="screen">
+    <script>
+        function setCookie(cname,cvalue) {
+          document.cookie = cname + "=" + cvalue + ";path=/";
+        }
+        
+        function getCookie(cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        }
+        
+        function checkCookie() {
+          var user=getCookie("accepted");
+          if (user != "") {
+            alert("Welcome again " + user);
+          } else {
+             alert("Non ci sono cookie!!");
+          }
+        }
+
+        function cookieAccepted(){
+            setCookie("accepted", "yes", 0);
+        }
+    </script>
 </head>
 
-<body>
+<body onload="checkCookie()">
     <h1>Privacy e cookie policy</h1>
     <h2>INFORMATIVA PER IL TRATTAMENTO DEI DATI PERSONALI</h2>
     <p>
