@@ -13,6 +13,8 @@
     <script>
         function setCookie(cname,cvalue) {
           document.cookie = cname + "=" + cvalue + ";path=/";
+          document.getElementById("cookie_accepted").style.display = "none";
+          document.getElementById("cookie_accepted").style.opacity = "0";
         }
         
         function getCookie(cname) {
@@ -35,6 +37,8 @@
           var user=getCookie("accepted");
           if (user != "") {
             alert("Welcome again " + user);
+            document.getElementById("cookie_accepted").style.display = "none";
+            document.getElementById("cookie_accepted").style.opacity = "0";
           } else {
              alert("Non ci sono cookie!!");
           }
