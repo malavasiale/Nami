@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
   }
 
-.body-class-index {
+body {
     background: linear-gradient(0deg, rgba(4,5,0,1) 0%, rgba(182,185,6,1) 68%, rgba(248,254,6,1) 100%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,8 +71,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20vh;
-
 }
 .text-container{
     margin-top: 5%;
