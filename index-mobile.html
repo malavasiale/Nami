@@ -1,4 +1,4 @@
-﻿<head>
+<head>
     <meta charset="UTF-8">
     <!--<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css'>
@@ -15,15 +15,6 @@
 
     <!-- JS per i Cookie -->
     <script>
-
-		var width = window.innerWidth
-            || document.documentElement.clientWidth
-            || document.body.clientWidth;
-
-        if(width <= 768){
-            document.location = "index-mobile.html";
-		}
-		
         function setCookie(cname,cvalue) {
           document.cookie = cname + "=" + cvalue + ";path=/";
           document.getElementById("cookie_accepted").style.display = "none";
@@ -93,6 +84,7 @@
 
 </head>
 <body class="body-class-index" onload="checkCookie()">
+
 
 	<div id="cookie_accepted" class="cookie">
 		<div class="closeNav" onclick="cookieAccepted()">X</div>
@@ -173,9 +165,9 @@
 			</div>
 
 			<div class="container">
-				<div style="width:50%;" class="card-inner">
+				<div style="width:90%;" class="card-inner">
 					<div style="display: flex;align-items: center;justify-content: center;">
-						<img style="width: 50%;" src="./media/logo.png" />
+						<img style="width: 90%;" src="./media/logo.png" />
 					</div>
 					<h2>EMS: Il tuo benessere in 15’!</h2>
 				</div>
