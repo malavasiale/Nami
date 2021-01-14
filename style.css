@@ -36,6 +36,32 @@ body {
     transform-origin: 0 0;
 }
 
+.menu-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.grid-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 20%;
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(1,1,1,0);
+    margin-left: 4%;
+}
+
+.grid-menu-rows{
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .home {
     background-image: url('./media/0.jpg');

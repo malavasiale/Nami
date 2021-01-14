@@ -100,9 +100,15 @@
         </p>
     </div>
 
-    <div style="height: 10vh; position: absolute; top: 0; background-color: rgba(1, 1, 1, 0); ">
-        <a><img src="home.png" style="height: 10vh;" /></a>
-        <a><img src="home.png" style="height: 10vh;" /></a>
+    <div class="grid-menu">
+        <div class="grid-menu-rows">
+            <img class="menu-icons" src="home.png" />
+            <p style="margin: 0;">Chi siamo</p>
+        </div>
+        <div class="grid-menu-rows">
+            <img class="menu-icons" src="home.png" />
+            <p style="margin: 0;">Prenota gratis</p>
+        </div>
     </div>
 
     <div id="home_image" class="home">
@@ -222,6 +228,7 @@
         </div>
     </div>
 
+    <!--
     <div class="card-inner" style="margin: 1%; background-image: url('./media/8.jpg'); background-size: cover; background-repeat: no-repeat;">
         <div id="form" class="grid-container-form">
             <div class="form-side">
@@ -233,6 +240,8 @@
             </div>
         </div>
     </div>
+    -->
+    
 
 
     <!-- Slideshow container -->
@@ -251,23 +260,21 @@
     </div>
 
     <div class="card-inner" style="margin: 1%;background:url('./media/14.jpg'); background-size: cover;">
-        <div id="calendario" class="grid-container-form">
-            <div>
-                <iframe id="calendario1" src="https://koalendar.com/events/meet-with-nami-coach?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="800px"></iframe>
-                <iframe id="calendario2" src="https://koalendar.com/events/sede-2?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="800px"></iframe>
-            </div>
-            <div class="form-side">
-                <div class="grid-selector">
-                    <div class="card-inner"><h2>PRENOTA LA TUA PROVA<br />GRATUITA!</h2></div>
-                    <div class="select">
-                        <select name="slct" id="slct" onchange="getSelectValue()">
-                            <option selected disabled>Scegli la sede...</option>
-                            <option value="1">Sede 1</option>
-                            <option value="2">Sede 2</option>
-                        </select>
-                    </div>
+        <div class="form-side">
+            <div class="grid-selector">
+                <div id="calendario" class="card-inner"><h2>PRENOTA LA TUA PROVA<br />GRATUITA!</h2></div>
+                <div class="select">
+                    <select name="slct" id="slct" onchange="getSelectValue()">
+                        <option selected disabled>Scegli la sede...</option>
+                        <option value="1">Sede 1</option>
+                        <option value="2">Sede 2</option>
+                    </select>
                 </div>
             </div>
+        </div>
+        <div>
+            <iframe id="calendario1" src="https://koalendar.com/events/meet-with-nami-coach?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="800px"></iframe>
+            <iframe id="calendario2" src="https://koalendar.com/events/sede-2?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="800px"></iframe>
         </div>
     </div>
 
