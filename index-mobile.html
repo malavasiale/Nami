@@ -4,58 +4,58 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>-->
     <link rel="stylesheet" href="./mobile-style.css">
-	<link rel="stylesheet" href="./footer.css">
-	<link rel="stylesheet" href="./select.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./select.css">
     <link rel="stylesheet" href="./w3SchoolSlider.css">
     <script src="https://use.fontawesome.com/400acfb3d8.js"></script>
 
     <!-- JS per i Cookie -->
     <script>
 
-		var width = window.innerWidth
+        var width = window.innerWidth
             || document.documentElement.clientWidth
             || document.body.clientWidth;
 
-        if(width <= 768){
+        if (width <= 768) {
             document.location = "index-mobile.html";
-		}
-		
-        function setCookie(cname,cvalue) {
-          document.cookie = cname + "=" + cvalue + ";path=/";
-          document.getElementById("cookie_accepted").style.display = "none";
-          document.getElementById("cookie_accepted").style.opacity = "0";
-        }
-        
-        function getCookie(cname) {
-          var name = cname + "=";
-          var decodedCookie = decodeURIComponent(document.cookie);
-          var ca = decodedCookie.split(';');
-          for(var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-              c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-              return c.substring(name.length, c.length);
-            }
-          }
-          return "";
-        }
-        
-        function checkCookie() {
-          var user=getCookie("accepted");
-          if (user != "") {
-            document.getElementById("cookie_accepted").style.display = "none";
-            document.getElementById("cookie_accepted").style.opacity = "0";
-          }
         }
 
-        function cookieAccepted(){
+        function setCookie(cname, cvalue) {
+            document.cookie = cname + "=" + cvalue + ";path=/";
+            document.getElementById("cookie_accepted").style.display = "none";
+            document.getElementById("cookie_accepted").style.opacity = "0";
+        }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            var user = getCookie("accepted");
+            if (user != "") {
+                document.getElementById("cookie_accepted").style.display = "none";
+                document.getElementById("cookie_accepted").style.opacity = "0";
+            }
+        }
+
+        function cookieAccepted() {
             setCookie("accepted", "yes", 0);
         }
     </script>
 
-	<!-- JS cambio immagine home-->
+    <!-- JS cambio immagine home-->
     <script>
         var i = 1;
         function changeBackground() {
@@ -68,20 +68,19 @@
         }
 
         window.setInterval(changeBackground, 8000);
-	</script>
-	
-	<!-- JS per menu a tendina -->
-	<script>
-        function getSelectValue()
-        {
-			var selectedValue = document.getElementById("slct").value;
-			if(selectedValue == 1){
-				document.getElementById("calendario1").style.height = "800px";
-				document.getElementById("calendario2").style.height = "0";
-			}else if(selectedValue == 2){
-				document.getElementById("calendario1").style.height = "0";
-				document.getElementById("calendario2").style.height = "800px";
-			}
+    </script>
+
+    <!-- JS per menu a tendina -->
+    <script>
+        function getSelectValue() {
+            var selectedValue = document.getElementById("slct").value;
+            if (selectedValue == 1) {
+                document.getElementById("calendario1").style.height = "800px";
+                document.getElementById("calendario2").style.height = "0";
+            } else if (selectedValue == 2) {
+                document.getElementById("calendario1").style.height = "0";
+                document.getElementById("calendario2").style.height = "800px";
+            }
         }
         getSelectValue();
     </script>
