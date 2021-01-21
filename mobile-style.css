@@ -115,7 +115,7 @@ body {
     justify-content: center;
 }
 .text-container{
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .text-container h1{
     text-align: center;
@@ -124,6 +124,8 @@ body {
 .text-container h3 {
     text-align: center;
     color: white;
+    font-size: 200%;
+    margin: 2%;
 }
 .my-hr{
     width: 70%;
@@ -209,6 +211,7 @@ body {
 
     .outer-container-icons {
         width: fit-content;
+        margin-top: 5%;
         text-transform: uppercase;
         letter-spacing: 0.3ch;
         position: relative;
@@ -230,15 +233,16 @@ body {
         color: white;
         font-size: x-large;
         line-height: 150%;
-        font-size: 120%;
+        font-size: 200%;
         padding: 2%;
     }
 
     .grid-container-icons2 {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        width: 94%;
-        margin: 3% 3% 0 3%;
+        background-color: rgba(52, 58, 64, 0.95);
+        grid-template-rows: 20% 80%;
+        width: 98%;
+        margin: 3% 1% 0 1%;
         border: 1px solid #FAFF05;
         border-radius: 20px;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
