@@ -26,12 +26,13 @@ select {
   .select {
     position: relative;
     display: flex;
-    width: 20em;
-    height: 3em;
+    width: 100%;
+    height: 40%;
     line-height: 3;
     background: #2c3e50;
     overflow: hidden;
     border-radius: .25em;
+    text-size-adjust: 200%;
   }
   select {
     flex: 1;

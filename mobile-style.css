@@ -109,6 +109,13 @@ body {
     cursor: pointer;
 }
 
+.chiacchiere {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -120,11 +127,12 @@ body {
 .text-container h1{
     text-align: center;
     color: #FAFF05;
+    font-size: 300%;
 }
 .text-container h3 {
     text-align: center;
     color: white;
-    font-size: 200%;
+    font-size: 230%;
     margin: 2%;
 }
 .my-hr{
@@ -204,9 +212,10 @@ body {
 
     .inner-icon-comment {
         margin-top: 30%;
-        margin-bottom: 3%;
+        margin-bottom: 10%;
         text-align: center;
         color: white;
+        font-size: 150%;
     }
 
     .outer-container-icons {
@@ -226,21 +235,22 @@ body {
     }
 
     .text-container2 {
-        display: flex;
-        text-align: center;
+        text-align: justify;
         align-items: center;
         justify-content: center;
         color: white;
         font-size: x-large;
         line-height: 150%;
-        font-size: 200%;
+        font-size: 230%;
         padding: 2%;
+        margin: 3%;
     }
 
     .grid-container-icons2 {
         display: grid;
         background-color: rgba(52, 58, 64, 0.95);
-        grid-template-rows: 20% 80%;
+        grid-template-rows: 40% 60%;
+        grid-row-gap: 10%;
         width: 98%;
         margin: 3% 1% 0 1%;
         border: 1px solid #FAFF05;
@@ -261,27 +271,27 @@ body {
 
     .hex {
         margin-top: 70px;
-        width: 104px;
-        height: 60px;
+        width: 208px;
+        height: 120px;
         background: #FAFF05;
         position: relative;
     }
 
         .hex:before, .hex:after {
             content: "";
-            border-left: 52px solid transparent;
-            border-right: 52px solid transparent;
+            border-left: 104px solid transparent;
+            border-right: 104px solid transparent;
             position: absolute;
         }
 
         .hex:before {
-            top: -29.5px;
-            border-bottom: 30px solid #FAFF05;
+            top: -59px;
+            border-bottom: 60px solid #FAFF05;
         }
 
         .hex:after {
-            bottom: -29.5px;
-            border-top: 30px solid #FAFF05;
+            bottom: -59px;
+            border-top: 60px solid #FAFF05;
         }
 
         .hex.inner {
@@ -293,11 +303,11 @@ body {
         }
 
             .hex.inner:before {
-                border-bottom: 30px solid rgb(52, 58, 64);
+                border-bottom: 60px solid rgb(52, 58, 64);
             }
 
             .hex.inner:after {
-                border-top: 30px solid rgb(52, 58, 64);
+                border-top: 60px solid rgb(52, 58, 64);
             }
 
         .hex.inner2 {
@@ -312,9 +322,63 @@ body {
         }
 
             .hex.inner2:before {
-                border-bottom: 30px solid #FAFF05;
+                border-bottom: 60px solid #FAFF05;
             }
 
             .hex.inner2:after {
-                border-top: 30px solid #FAFF05;
+                border-top: 60px solid #FAFF05;
             }
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 2; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    }
+    /* Modal Content/Box */
+    .modal-content {
+        margin: 3% 3% 0 3%;
+        background-color: rgba(52, 58, 64, 0.95);
+        border: 1px solid #FAFF05;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s; 
+    }
+    /* The Close Button */
+    .close {
+        color: #aaa;
+        margin: 10% 5% 5% 5%;
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
