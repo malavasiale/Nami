@@ -101,7 +101,7 @@ body {
     transition: all 2s linear;
     display: block;
     opacity: 1;
-    font-size: 150%;
+    font-size: 200%;
 }
 .closeNav{
     position: absolute;
