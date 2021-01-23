@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./select.css">
     <link rel="stylesheet" href="./w3SchoolSlider.css">
+    <title>Namì Active Coach - Tute EMS</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-657R52E63T"></script>
     <script>
@@ -128,13 +129,13 @@
             <div style="height:10vw; width: 10vw; display: flex;align-items: center;justify-content: center;">
                 <img class="menu-icons" src="home.png" />
             </div>
-            <p style="margin: 0 0 10% 0;text-align: center;">Chi siamo</p>
+            <p style="margin: 0 0 10% 0;text-align: center;font-size: 150%;">Chi siamo</p>
         </a>
         <a href="#calendario" class="grid-menu-rows">
             <div style="height:10vw; width: 10vw; display: flex;align-items: center;justify-content: center;">
                 <img class="menu-icons" src="tablet-icon.png" />
             </div>
-            <p style="margin: 0 0 10% 0;text-align: center;">Prenota gratis</p>
+            <p style="margin: 0 0 10% 0;text-align: center;font-size: 150%;">Prenota gratis</p>
         </a>
     </div>
 
@@ -328,15 +329,17 @@
                 <div class="select">
                     <select name="slct" id="slct" onchange="getSelectValue()">
                         <option selected disabled>Scegli la sede...</option>
-                        <option value="1">Sede 1</option>
+                        <option value="1">Villafranca di Verona (VR)</option>
                         <option value="2">Sede 2</option>
                     </select>
                 </div>
             </div>
         </div>
-        <div>
-            <iframe id="calendario1" src="https://koalendar.com/events/meet-with-nami-coach?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="800px"></iframe>
-            <iframe id="calendario2" src="https://koalendar.com/events/sede-2?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="800px"></iframe>
+        <div style="display: flex;align-items: center; justify-content: center;">
+            <div style="width: 70%;">
+                <iframe id="calendario1" src="https://koalendar.com/events/meet-with-nami-coach?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="900px"></iframe>
+                <iframe id="calendario2" src="https://koalendar.com/events/sede-2?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="900px"></iframe>
+            </div>
         </div>
     </div>
 
@@ -372,7 +375,7 @@
             <p>C.F: 05294650287</p>
             <p>SDI: M5UXCR1</p>
             <p style="color: yellow; text-decoration: underline;">SEDI OPERATIVE</p>
-            <p> Villafranca di Verona (VR) via portogallo 1/i</p>
+            <p> Villafranca di Verona (VR) via portogallo 1/<span style="text-transform: lowercase;">i</span></p>
             <p>Albignasego, Padova (PD) via Roma 117</p>
 
         </div>
