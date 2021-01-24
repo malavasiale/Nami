@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap');
-
+@font-face {
+    font-family: AllStar;
+    src: url(AllStarResort.ttf);
+}
 html {
     scroll-behavior: smooth;
   }
@@ -12,6 +15,10 @@ body {
     font-family: 'Big Shoulders Stencil Display', cursive;
     cursor: url('./cursor1.png'), auto;
     margin: 0;
+}
+.subtitle{
+    font-family: AllStar;
+    font-size: 250%;
 }
 
 .mySlides {
