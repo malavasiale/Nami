@@ -226,11 +226,12 @@ body {
 
     .text-container2 {
         display: flex;
-        text-align: center;
+        text-align: justify;
+        font-family: Georgia, serif;
         align-items: center;
         justify-content: center;
         color: white;
-        font-size: x-large;
+        font-size: 120%;
         line-height: 150%;
         padding: 2%;
     }

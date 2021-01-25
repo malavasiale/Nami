@@ -249,6 +249,7 @@ body {
 
     .text-container2 {
         text-align: justify;
+        font-family: Georgia, serif;
         align-items: center;
         justify-content: center;
         color: white;
@@ -357,6 +358,7 @@ body {
     /* Modal Content/Box */
     .modal-content {
         margin: 3% 3% 0 3%;
+        font-family: Georgia, serif;
         background-color: rgba(52, 58, 64, 0.95);
         border: 1px solid #FAFF05;
         border-radius: 20px;
