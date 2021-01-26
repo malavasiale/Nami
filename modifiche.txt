@@ -1,0 +1,5 @@
+1. nella desktop icone con bordo e gialle
+2. georgia anche gli altri testi
+3. prenota la prova gratuita -> mettici il tasto di prenota gratis e fai aprire pop-up
+4. leva spazio nel footer tra tel e mail
+5. leva spazio tra footer e spazio sopra
