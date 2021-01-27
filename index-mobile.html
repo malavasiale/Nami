@@ -1,5 +1,7 @@
 ﻿<head>
     <meta charset="UTF-8">
+    <meta name="description" content="Tute EMS e allenemento con personal coach dedicato!">
+    <meta name="keywords" content="Nami,activecoach,EMS, tute EMS,15 minuti allenamento,coach EMS,allenamento EMS,dispositivo EMS,training EMS,tuta uomo EMS,tuta donna EMS">
     <!--<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>-->
@@ -100,11 +102,11 @@
         function getSelectValue() {
             var selectedValue = document.getElementById("slct").value;
             if (selectedValue == 1) {
-                document.getElementById("calendario1").style.height = "800px";
+                document.getElementById("calendario1").style.height = "40vh";
                 document.getElementById("calendario2").style.height = "0";
             } else if (selectedValue == 2) {
                 document.getElementById("calendario1").style.height = "0";
-                document.getElementById("calendario2").style.height = "800px";
+                document.getElementById("calendario2").style.height = "40vh";
             }
         }
         getSelectValue();
@@ -158,7 +160,7 @@
 
         <div id="chi-siamo" class="text-container">
             <h1>Cos’è il metodo EMS di Nami? e perché scegliere NOI?</h1>
-            <h3>
+            <h3 style="font-family: Georgia, serif;line-height: 120%;">
                 L'Elettro Stimolazione Muscolare (EMS) è una tecnica fisioterapica che amplifica degli impulsi elettrici
                 naturali del corpo attraverso onde elettriche. Lo stimolo supplementare indotto dalla tuta con incorporata
                 la tecnologia di trasmissione EMS sollecita la muscolatura ad una maggiore contrazione intensificando
@@ -313,35 +315,52 @@
         <h1 style="text-align: center; color: #FAFF05; margin-bottom: 2%; font-size: 300%;">Le nostre tute EMS</h1>
 
         <div class="w3-content w3-display-container">
-            <img class="mySlides w3-animate-fading slider" src="./media/20.jpg" style="width:100%">
-            <img class="mySlides w3-animate-fading slider" src="./media/21.jpg" style="width:100%">
-            <img class="mySlides w3-animate-fading slider" src="./media/22.jpg" style="width:100%">
-            <img class="mySlides w3-animate-fading slider" src="./media/25.jpg" style="width:100%">
+            <img alt="Dispositivo elettrostimolazione" class="mySlides w3-animate-fading slider" src="./media/20.jpg" style="width:100%">
+            <img alt="Tuta donna EMS" class="mySlides w3-animate-fading slider" src="./media/21.jpg" style="width:100%">
+            <img alt="Dispositivo EMS" class="mySlides w3-animate-fading slider" src="./media/22.jpg" style="width:100%">
+            <img alt="Tuta completa EMS" class="mySlides w3-animate-fading slider" src="./media/25.jpg" style="width:100%">
 
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
         </div>
     </div>
 
-    <div class="card-inner" style="margin: 1%;background:url('./media/14.jpg'); background-size: cover;border: 1px solid #FAFF05;border-radius: 20px;">
-        <div class="form-side">
-            <div class="grid-selector">
-                <div style="background-color: rgba(52, 58, 64, 0.6);" id="calendario" class="card-inner"><h2>PRENOTA LA TUA PROVA<br />GRATUITA!</h2></div>
-                <div class="select">
-                    <select name="slct" id="slct" onchange="getSelectValue()">
+    <div class="card-inner" style="margin: 1%;background:url('./media/14.jpg'); background-size: cover;display: flex;justify-content: center;align-items: center;">
+
+        <div class="card-inner-prenota">
+            <a id="calendario" style="text-decoration: none;cursor: pointer;">
+                <div style="height:15vw;display: flex;align-items: center;justify-content: center;">
+                    <img class="menu-icons" src="tablet-icon.png" />
+                </div>
+                <h2>PRENOTA LA TUA PROVA GRATUITA!</h2>  
+            </a>   
+        </div>
+            
+
+    </div>
+
+    <div id="myModalCalendar" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div style="display: flex;align-items: center;justify-content: center;height: 7%;margin: 0 0 2% 0;">
+                <div class="select" style="width:60%">
+                    <select style="height: 100%;" name="slct" id="slct" onchange="getSelectValue()">
                         <option selected disabled>Scegli la sede...</option>
                         <option value="1">Villafranca di Verona (VR)</option>
                         <option value="2">Sede 2</option>
                     </select>
                 </div>
             </div>
-        </div>
-        <div style="display: flex;align-items: center; justify-content: center;">
-            <div style="width: 70%;">
-                <iframe id="calendario1" src="https://koalendar.com/events/meet-with-nami-coach?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="900px"></iframe>
-                <iframe id="calendario2" src="https://koalendar.com/events/sede-2?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="900px"></iframe>
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <div style="width: 65%;">
+                    <iframe id="calendario1" src="https://koalendar.com/events/meet-with-nami-coach?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="80vh"></iframe>
+                    <iframe id="calendario2" src="https://koalendar.com/events/sede-2?embed=true" style="border:0px #ffffff none;height: 0;transition: ease 1s;" name="koalendar-iframe" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" width="100%" allowfullscreen="" height="80vh"></iframe>
+                </div>
             </div>
         </div>
+
     </div>
 
     <!-- JS per lo slider -->
@@ -389,7 +408,6 @@
         <div class="riga">
             <h5>Contatti</h5>
             <p style="text-transform: lowercase;">Email: <a href="mailto:namisportsrl@gmail.com">namisportsrl@gmail.com</a></p>
-            <br><br>
             <p style="text-transform: lowercase;">Tel: <a href="tel:3407414134">340 7414134</a></p>
             <ul class="social-icons">
                 <a class="facebook" href="https://www.facebook.com/nami.activecoach"></a>
@@ -405,16 +423,19 @@
         var modal1 = document.getElementById("myModal1");
         var modal2 = document.getElementById("myModal2");
         var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModalCalendar");
 
         // Get the button that opens the modal
         var btn1 = document.getElementById("myBtn1");
         var btn2 = document.getElementById("myBtn2");
         var btn3 = document.getElementById("myBtn3");
+        var btn4 = document.getElementById("calendario");
 
         // Get the <span> element that closes the modal
         var span1 = document.getElementsByClassName("close")[0];
         var span2 = document.getElementsByClassName("close")[1];
         var span3 = document.getElementsByClassName("close")[2];
+        var span4 = document.getElementsByClassName("close")[3];
 
         // When the user clicks on the button, open the modal
         btn1.onclick = function () {
@@ -425,6 +446,9 @@
         }
         btn3.onclick = function () {
             modal3.style.display = "block";
+        }
+        btn4.onclick = function () {
+            modal4.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
@@ -437,6 +461,9 @@
         span3.onclick = function () {
             modal3.style.display = "none";
         }
+        span4.onclick = function () {
+            modal4.style.display = "none";
+        }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
@@ -446,6 +473,8 @@
                 modal2.style.display = "none";
             }else if(event.target == modal3){
                 modal3.style.display = "none";
+            }else if(event.target == modal4){
+                modal4.style.display = "none";
             }
         }
 
