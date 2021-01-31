@@ -1,5 +1,5 @@
 .body-class-cookie{
-    background-color:  rgb(52, 58, 64);
+    background-color:  rgb(52, 58, 64) !important;
     transition: 0.5s;
     font-family: 'Big Shoulders Stencil Display', cursive;
     cursor: url('./cursor1.png'), auto;
