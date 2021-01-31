@@ -88,7 +88,8 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     height: 100%;
-    transition: 1s;
+    transition: background-image 1s;
+    -moz-transition: background-image 1s;
 }
 
 .cookie{
@@ -175,11 +176,7 @@ body {
     width: fit-content;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    .card-inner {
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-    }
+
 
     .container h2 {
         text-align: center;
