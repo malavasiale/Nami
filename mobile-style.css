@@ -77,7 +77,7 @@ body {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    background-color: rgba(250, 255, 5, 0.4);
+    background-color: rgba(250, 255, 5, 1);
     transition: 1s;
 }
 
@@ -167,7 +167,7 @@ body {
     background-color: rgba(0,0,0,0.4);
 }
 .card-inner-prenota {
-    background-color: rgba(250, 255, 5, 0.7);
+    background-color: rgba(250, 255, 5, 1);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -261,7 +261,7 @@ body {
     }
 
     .text-container2 {
-        text-align: justify;
+        text-align: center;
         font-family: Georgia, serif;
         align-items: center;
         justify-content: center;
@@ -276,8 +276,8 @@ body {
     .grid-container-icons2 {
         display: grid;
         background-color: rgba(52, 58, 64, 0.95);
-        grid-template-rows: 40% 60%;
-        grid-row-gap: 10%;
+        grid-template-rows: 40% 55%;
+        grid-row-gap: 5%;
         width: 98%;
         margin: 3% 1% 0 1%;
         border: 1px solid #FAFF05;
