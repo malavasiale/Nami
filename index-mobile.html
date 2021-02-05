@@ -316,9 +316,9 @@
 
         <div class="w3-content w3-display-container">
             <img alt="Dispositivo elettrostimolazione" class="mySlides w3-animate-fading slider" src="./media/20.jpg" style="width:100%">
-            <img alt="Tuta donna EMS" class="mySlides w3-animate-fading slider" src="./media/21.jpg" style="width:100%">
-            <img alt="Dispositivo EMS" class="mySlides w3-animate-fading slider" src="./media/22.jpg" style="width:100%">
-            <img alt="Tuta completa EMS" class="mySlides w3-animate-fading slider" src="./media/25.jpg" style="width:100%">
+            <img alt="Tuta donna EMS" class="mySlides w3-animate-fading" src="./media/21.jpg" style="width:100%">
+            <img alt="Dispositivo EMS" class="mySlides w3-animate-fading" src="./media/22.jpg" style="width:100%">
+            <img alt="Tuta completa EMS" class="mySlides w3-animate-fading" src="./media/25.jpg" style="width:100%">
 
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -391,6 +391,21 @@
                 x[i].style.display = "none";
             }
             x[slideIndex - 1].style.display = "block";
+        }
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 9000);
         }
     </script>
 
